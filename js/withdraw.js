@@ -11,6 +11,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
 
     previousWithdrawElement.innerText = currentWhithdrawTotal;
 
+    if (newWithdrawAmount > previousBalanceTotal) {
+        alert("Eto taka Nai");
+    }
+
 
     const balanceTotalElement = document.getElementById('balance-data');
     const previousDeposiTotalString = balanceTotalElement.innerText;
